@@ -1,0 +1,42 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleIOT"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core" xmlns:Media="using:Microsoft.Xaml.Interactions.Media"
+    x:Class="SampleIOT.MainPage"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Storyboard x:Name="Animation_Copy1" RepeatBehavior="Forever"/>
+        <LinearGradientBrush x:Key="GreenFill" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF084F04" Offset="0"/>
+            <GradientStop Color="#FFA7DE93" Offset="1"/>
+        </LinearGradientBrush>
+    </Page.Resources>
+
+    <Grid x:Name="WeatherApp" Background="#FFEBF1EA" Margin="10,0" Width="960" Height="540">
+        <Grid x:Name="WeatherGrid" Margin="-1,-1,0,0">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1F86EE" Offset="0"/>
+                    <GradientStop Color="#FFB4CBCF" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid x:Name="Hills" Height="282" Margin="-130,0,-84,-99" VerticalAlignment="Bottom">
+                <Grid.Clip>
+                    <RectangleGeometry Rect="130.5,-357.5,960,540"/>
+                </Grid.Clip>
+                <Path Data="M-130,544.5 C-130,544.5 218.212,220.621 464.212,430.621 C710.212,640.621 1044.71,275.621 1044.71,388.121 C1044.71,500.621 984.5,607 984.5,607 z" Margin="42,0,-42.712,32.294" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Fill="{StaticResource GreenFill}" RenderTransformOrigin="0.532,0.429"/>
+                <Path Data="M1026.5,538.5 C1026.5,538.5 939.5,291 744.5,381 C549.5,471 535.5,607 535.5,607 z" Fill="{StaticResource GreenFill}" HorizontalAlignment="Right" Margin="0,1.501,18.5,33.795" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="495" d:LayoutOverrides="TopPosition, BottomPosition"/>
+                <Path Data="M-23.5,564 C-23.5,564 156.5,417 234.5,457.5 C312.5,498 342.5,586 335,590.5 C327.5,595 -23.5,564 -23.5,564 z" Fill="{StaticResource GreenFill}" HorizontalAlignment="Left" Margin="106.5,90.646,0,49.849" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="360.615" d:LayoutOverrides="TopPosition, BottomPosition"/>
+                <Path Data="M-23.5,564 C-23.5,564 156.5,417 234.5,457.5 C312.5,498 342.5,586 335,590.5 C327.5,595 -23.5,564 -23.5,564 z" Fill="{StaticResource GreenFill}" Margin="469.405,102.711,243.06,-0.194" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" RenderTransformOrigin="0.5,0.5">
+                    <Path.RenderTransform>
+                        <CompositeTransform Rotation="-7.709"/>
+                    </Path.RenderTransform>
+                </Path>
+            </Grid>
+            <Border BorderBrush="#FFF1ECEC" BorderThickness="4,0,0,0" Margin="455,0,0,0" Background="Black" Opacity="0.3"/>
+        </Grid>
+    </Grid>
+</Page>
