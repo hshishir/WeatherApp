@@ -27,16 +27,22 @@
                 <Grid.Clip>
                     <RectangleGeometry Rect="130.5,-357.5,960,540"/>
                 </Grid.Clip>
-                <Path Data="M-130,544.5 C-130,544.5 218.212,220.621 464.212,430.621 C710.212,640.621 1044.71,275.621 1044.71,388.121 C1044.71,500.621 984.5,607 984.5,607 z" Margin="42,0,-42.712,32.294" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Fill="{StaticResource GreenFill}" RenderTransformOrigin="0.532,0.429"/>
-                <Path Data="M1026.5,538.5 C1026.5,538.5 939.5,291 744.5,381 C549.5,471 535.5,607 535.5,607 z" Fill="{StaticResource GreenFill}" HorizontalAlignment="Right" Margin="0,1.501,18.5,33.795" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="495" d:LayoutOverrides="TopPosition, BottomPosition"/>
+                <Path Data="M-130,544.5 C-130,544.5 218.212,220.621 464.212,430.621 C710.212,640.621 1044.71,275.621 1044.71,388.121 C1044.71,500.621 984.5,607 984.5,607 z" Margin="47,28,-47.712,22.294" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Fill="{StaticResource GreenFill}" RenderTransformOrigin="0.532,0.429"/>
+                <Path Data="M1026.5,538.5 C1026.5,538.5 939.5,291 744.5,381 C549.5,471 535.5,607 535.5,607 z" Fill="{StaticResource GreenFill}" Margin="568.5,28,19.5,22.294" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
                 <Path Data="M-23.5,564 C-23.5,564 156.5,417 234.5,457.5 C312.5,498 342.5,586 335,590.5 C327.5,595 -23.5,564 -23.5,564 z" Fill="{StaticResource GreenFill}" HorizontalAlignment="Left" Margin="106.5,90.646,0,49.849" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="360.615" d:LayoutOverrides="TopPosition, BottomPosition"/>
-                <Path Data="M-23.5,564 C-23.5,564 156.5,417 234.5,457.5 C312.5,498 342.5,586 335,590.5 C327.5,595 -23.5,564 -23.5,564 z" Fill="{StaticResource GreenFill}" Margin="469.405,102.711,243.06,-0.194" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" RenderTransformOrigin="0.5,0.5">
+                <Path Data="M-23.5,564 C-23.5,564 156.5,417 234.5,457.5 C312.5,498 342.5,586 335,590.5 C327.5,595 -23.5,564 -23.5,564 z" Fill="{StaticResource GreenFill}" Margin="337.626,134.673,195.125,4.815" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" RenderTransformOrigin="0.5,0.5">
                     <Path.RenderTransform>
                         <CompositeTransform Rotation="-7.709"/>
                     </Path.RenderTransform>
                 </Path>
             </Grid>
-            <Border BorderBrush="#FFF1ECEC" BorderThickness="4,0,0,0" Margin="455,0,0,0" Background="Black" Opacity="0.3"/>
+            <Border BorderBrush="#FFF1ECEC" BorderThickness="4,0,0,0" Margin="434,0,0,0" Background="Black" Opacity="0.3"/>
+            <Image x:Name="Assets_map_png" Margin="403,-28,11,187" Source="Assets/map.png" Stretch="Fill" Opacity="0.15"/>
+            <TextBlock x:Name="textBlock" Height="35" Margin="0,0,348,177" TextWrapping="Wrap" Text="Forecast: " VerticalAlignment="Bottom" Foreground="#FFF1EAEA" FontSize="16" FontFamily="Calibri" FontWeight="Bold" HorizontalAlignment="Right" Width="129"/>
+            <ComboBox x:Name="comboBox" HorizontalAlignment="Right" Height="29" Margin="0,0,67,30" VerticalAlignment="Bottom" Width="100" BorderThickness="1" Background="#FFF1EAEA"/>
+            <Path Data="M50,450 L460.239,450" Fill="#FFE4DA0F" Height="1" Margin="0,0,66.761,64.224" Stretch="Fill" Stroke="#FFC2C937" UseLayoutRounding="False" VerticalAlignment="Bottom" StrokeThickness="2" HorizontalAlignment="Right" Width="411.239"/>
+            <TextBlock x:Name="textBlock_Copy" Height="35" Margin="0,0,348,30" TextWrapping="Wrap" Text="Change Location:" VerticalAlignment="Bottom" Foreground="#FFF1EAEA" FontSize="16" FontFamily="Calibri" HorizontalAlignment="Right" Width="129" FontWeight="Bold"/>
+            <Path Data="M50,450 L460.239,450" Fill="#FFE4DA0F" Height="1" Margin="0,0,66.761,232.392" Stretch="Fill" Stroke="#FFC2C937" UseLayoutRounding="False" VerticalAlignment="Bottom" StrokeThickness="2" HorizontalAlignment="Right" Width="411.239"/>
         </Grid>
     </Grid>
 </Page>
